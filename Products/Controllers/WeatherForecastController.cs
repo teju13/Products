@@ -11,9 +11,12 @@ namespace Products.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        /// <summary>
+        /// startup
+        /// </summary>
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Mild"
+            "Freezing", "mild"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
